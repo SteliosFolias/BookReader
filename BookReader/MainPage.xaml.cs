@@ -46,7 +46,6 @@ namespace BookReader {
                 sb.AppendLine(page.Text);
             return sb.ToString();
         }
-
         private async Task SpeakWords(CancellationToken token) {
             while (currentIndex < words.Length && !token.IsCancellationRequested) {
                 string word = words[currentIndex];
