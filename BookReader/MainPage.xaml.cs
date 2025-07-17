@@ -86,7 +86,6 @@ namespace BookReader {
             Preferences.Default.Set(fileName, currentIndex);
             cts = new CancellationTokenSource();
             await SpeakWords(cts.Token);
-
         }
         private void OnPauseClicked(object sender, EventArgs e) {
             isPaused = true;
