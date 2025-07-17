@@ -76,7 +76,6 @@ namespace BookReader {
             return raw.Replace("[h]", "").Replace("[/h]", ""); // Or color using custom Label handler
         }
 
-
         private async void OnRestartClicked(object sender, EventArgs e) {
             cts.Cancel();
             PauseButton.IsEnabled = true;
