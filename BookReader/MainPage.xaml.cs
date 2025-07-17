@@ -70,7 +70,6 @@ namespace BookReader {
             var highlighted = fullText.Replace(word, $"[h]{word}[/h]");
             TextLabel.Text = FormatHighlightedText(highlighted);
         }
-
         private string FormatHighlightedText(string raw) {
             // Not rich text, so simulate with uppercase or emoji markers
             return raw.Replace("[h]", "").Replace("[/h]", ""); // Or color using custom Label handler
